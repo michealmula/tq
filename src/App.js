@@ -33,11 +33,22 @@ const C = {
 }
 
 const WATCHES = [
+  
+  
   {id:1,name:"Datejust Crystal Dial",nameAr:"ديتجاست مينا كريستال",brand:"Rolex",model:"",price:350,original:600,discount:42,category:"Classic",categoryAr:"كلاسيكي",badge:"bestseller",badgeAr:"الأكثر مبيعاً",dial:"Purple Crystal-set",dialAr:"أرجواني مرصع بالكريستال",condition:"New",year:"2024",desc:"Exuding pure elegance, this Datejust features a captivating purple dial adorned with sparkling crystal hour markers, housed in a polished steel case.",descAr:"تفيض هذه الساعة بالأناقة الخالصة، حيث تتميز بمينا أرجواني ساحر مرصع بمؤشرات ساعات من الكريستال المتلألئ، داخل هيكل فولاذي مصقول.",features:["Crystal Indices","Jubilee Bracelet","Date Magnification"],featAr:["مؤشرات كريستالية","سوار جوبيلي","عدسة تكبير للتاريخ"],img:null,exclusive:false,hot:true},
+  
+  
   {id:2,name:"Nautilus Blue",nameAr:"نوتيلوس أزرق",brand:"Patek Philippe",model:"",price:380,original:500,discount:24,category:"Unique to own",categoryAr:"مميز للاقتناء",badge:"exclusive",badgeAr:"حصري",dial:"Blue Gradient Ribbed",dialAr:"أزرق متدرج مخطط",condition:"New",year:"2024",desc:"A masterpiece of horological engineering, the Nautilus is defined by its iconic porthole design and blue ribbed dial.",descAr:"تحفة فنية في هندسة الساعات، تتميز النوتيلوس بتصميمها الأيقوني المستوحى من كوة السفن ومينائها الأزرق المخطط.",features:["Signature Porthole Case","Integrated Bracelet","Automatic Movement"],featAr:["هيكل أيقوني مميز","سوار مدمج","حركة أوتوماتيكية"],img:null,exclusive:true,hot:false},
+  
+  
   {id:3,name:"Integral Quartz",nameAr:"إنتجرال كوارتز",brand:"Rado",model:"",price:450,original:640,discount:30,category:"Simple",categoryAr:"بسيط",badge:"hot",badgeAr:"مطلوب",dial:"Champagne Sunray",dialAr:"شامبين شمسية",condition:"New",year:"2024",desc:"Embodying minimalist beauty, this Rado timepiece offers a sleek champagne dial and a comfortable bracelet.",descAr:"تجسيداً للجمال البسيط، تقدم ساعة رادو هذه مينا شامبين أنيقاً وسواراً مريحاً.",features:["Slim Profile","Sapphire Crystal","Precision Quartz"],featAr:["تصميم نحيف","زجاج ياقوتي","حركة كوارتز دقيقة"],img:null,exclusive:false,hot:false},
+  
+  
   {id:4,name:"Vintage Square",nameAr:"فينتيج سكوير",brand:"Casio",model:"",price:500,original:700,discount:29,category:"Practical",categoryAr:"عملي",badge:"deal",badgeAr:"عرض",dial:"Matte Black",dialAr:"أسود مطفي",condition:"New",year:"2024",desc:"Combining retro charm with modern functionality, this black-on-black Casio square watch is the ultimate daily-wear piece.",descAr:"تجمع هذه الساعة من كاسيو بين سحر التصميم الكلاسيكي والوظائف الحديثة.",features:["Retro Square Case","Black IP Finish","Durable Quartz"],featAr:["هيكل مربع كلاسيكي","طلاء أسود مقاوم","كوارتز متين"],img:null,exclusive:true,hot:true},
-{
+
+
+
+  {
 "id": 5,
 "name": "Classic Gold Square",
 "nameAr": "سكوير كلاسيك ذهبي",
@@ -60,17 +71,50 @@ const WATCHES = [
 "img": null,
 "exclusive": false,
 "hot": false
-},  {id:6,name:"Integral Crystal",nameAr:"إنتجرال كريستال",brand:"Rado",model:"",price:600,original:670,discount:10,category:"Classic",categoryAr:"كلاسيكي",badge:"new",badgeAr:"جديد",dial:"Grey Crystal-set",dialAr:"رمادي مرصع بالكريستال",condition:"New",year:"2024",desc:"Sophisticated and refined, this Rado features a monochromatic grey palette enhanced by luxurious crystal indices.",descAr:"متطورة وراقية، تتميز ساعة رادو هذه بلوحة ألوان رمادية أحادية معززة بمؤشرات كريستالية فاخرة.",features:["Crystal Accents","Monochrome Design","Ceramic Construction"],featAr:["لمسات كريستالية","تصميم أحادي اللون","هيكل سيراميكي"],img:null,exclusive:false,hot:false},
-  {id:7,name:"Royal Oak Quartz",nameAr:"رويال أوك كوارتز",brand:"Audemars Piguet",model:"",price:300,original:400,discount:25,category:"Unique to own",categoryAr:"مميز للاقتناء",badge:"hot",badgeAr:"مطلوب",dial:"Blue Tapisserie",dialAr:"أزرق بنقش تبيسري",condition:"New",year:"2024",desc:"Featuring the signature octagonal bezel and tapisserie dial, this Royal Oak is a horological masterpiece.",descAr:"تتميز بإطارها الثماني الشهير ومينائها بنقش التبيسري، تُعد رويال أوك تحفة فنية.",features:["Octagonal Bezel","Tapisserie Dial","Integrated Bracelet"],featAr:["إطار ثماني","مينا بنقش تبيسري","سوار مدمج"],img:null,exclusive:true,hot:false},
-  {id:8,name:"Land-Dweller Fluted",nameAr:"لاند-دويلر بإطار مخدد",brand:"Rolex",model:"",price:420,original:490,discount:14,category:"Practical",categoryAr:"عملي",badge:"bestseller",badgeAr:"الأكثر مبيعاً",dial:"Honey-comb Grey",dialAr:"رمادي بنقش خلية نحل",condition:"New",year:"2024",desc:"A robust adventurer's companion, the Land-Dweller combines a distinctive fluted bezel with a unique textured dial.",descAr:"رفيق المغامر القوي، تجمع ساعة لاند-دويلر بين الإطار المخدد المميز والمينا ذو الملمس الفريد.",features:["Fluted Bezel","Textured Dial","Oystersteel Build"],featAr:["إطار مخدد","مينا مزخرف","هيكل من أويسترستيل"],img:null,exclusive:false,hot:false},
-  {id:9,name:"Tank Louis",nameAr:"تانك لويس",brand:"Cartier",model:"",price:399,original:600,discount:34,category:"Classic",categoryAr:"كلاسيكي",badge:"exclusive",badgeAr:"حصري",dial:"Silver Roman",dialAr:"فضي بأرقام رومانية",condition:"New",year:"2024",desc:"The embodiment of timeless Parisian chic. With its rectangular silhouette and classic Roman numeral dial.",descAr:"تجسيد للأناقة الباريسية الخالدة. بفضل تصميمها المستطيل ومينائها الكلاسيكي ذي الأرقام الرومانية.",features:["Rectangular Case","Roman Numerals","Leather Strap"],featAr:["هيكل مستطيل","أرقام رومانية","سوار جلدي"],img:null,exclusive:false,hot:true},
-  {id:10,name:"Nautilus Silver",nameAr:"نوتيلوس فضي",brand:"Patek Philippe",model:"",price:320,original:600,discount:47,category:"Unique to own",categoryAr:"مميز للاقتناء",badge:"hot",badgeAr:"مطلوب",dial:"Silver Ribbed",dialAr:"فضي مخطط",condition:"New",year:"2024",desc:"This silver-dialed Nautilus offers a brighter, modern take on the legendary design.",descAr:"تقدم ساعة نوتيلوس ذات المينا الفضي نظرة عصرية وأكثر إشراقاً على التصميم الأسطوري.",features:["Silver Dial","Automatic Caliber","Porthole Design"],featAr:["مينا فضي","عيار أوتوماتيكي","تصميم كوة السفن"],img:null,exclusive:true,hot:false},
-  {id:11,name:"Minimalist Square",nameAr:"مربع مينيماليست",brand:"Casio",model:"",price:540,original:600,discount:10,category:"Simple",categoryAr:"بسيط",badge:"new",badgeAr:"جديد",dial:"Silver Sunray",dialAr:"فضي شمسي",condition:"New",year:"2026",desc:"A perfect blend of understated elegance and daily utility. This silver-toned square watch offers a clean, professional look.",descAr:"مزيج مثالي بين الأناقة البسيطة والعملية اليومية. توفر هذه الساعة المربعة ذات اللون الفضي مظهراً احترافياً نظيفاً.",features:["Square Profile","Silver Finish","Reliable Quartz"],featAr:["هيكل مربع","طلاء فضي","كوارتز موثوق"],img:null,exclusive:true,hot:false},
-  {id:12,name:"Nautilus Brown",nameAr:"نوتيلوس بني",brand:"Patek Philippe",model:"",price:549,original:640,discount:14,category:"Unique to own",categoryAr:"مميز للاقتناء",badge:"hot",badgeAr:"مطلوب",dial:"Chocolate Ribbed",dialAr:"شوكولاتة مخطط",condition:"New",year:"2026",desc:"An extraordinary Nautilus variant featuring a rich chocolate-toned dial.",descAr:"نسخة استثنائية من نوتيلوس تتميز بميناء غني بلون الشوكولاتة.",features:["Chocolate Dial","Integrated Bracelet","Exhibition Caseback"],featAr:["مينا شوكولاتة","سوار مدمج","غطاء خلفي شفاف"],img:null,exclusive:false,hot:false},
-  {id:13,name:"Black Stealth",nameAr:"بلاك ستيلث",brand:"Custom Design",model:"",price:399,original:550,discount:27,category:"Unique to own",categoryAr:"مميز للاقتناء",badge:"exclusive",badgeAr:"حصري",dial:"Arabic Numeral Matte",dialAr:"أرقام عربية مطفية",condition:"New",year:"2026",desc:"A bold, all-black statement piece featuring traditional Arabic numerals on a matte finish.",descAr:"قطعة جريئة باللون الأسود بالكامل تتميز بأرقام عربية تقليدية على سطح مطفي.",features:["Full Black Finish","Arabic Numerals","Artistic Dial"],featAr:["تشطيب أسود كامل","أرقام عربية","مينا فني"],img:null,exclusive:false,hot:false},
-  {id:14,name:"Everyday Square",nameAr:"إيفري داي سكوير",brand:"Casio",model:"",price:450,original:600,discount:25,category:"Practical",categoryAr:"عملي",badge:"deal",badgeAr:"عرض",dial:"Dark Grey",dialAr:"رمادي داكن",condition:"New",year:"2026",desc:"Built for the practical individual, this square watch offers a sophisticated dark grey dial.",descAr:"صُممت للفرد العملي، تقدم هذه الساعة المربعة ميناءً رمادياً داكناً متطوراً.",features:["Square Case","Date Function","Casual Style"],featAr:["هيكل مربع","وظيفة التاريخ","تصميم كاجوال"],img:null,exclusive:true,hot:false},
-  {id:15,name:"Oyster Perpetual Day-Date",nameAr:"أويستر بربتشوال داي-ديت",brand:"Rolex",model:"",price:500,original:600,discount:17,category:"Classic",categoryAr:"كلاسيكي",badge:"bestseller",badgeAr:"الأكثر مبيعاً",dial:"Sunray Grey Crystal-set",dialAr:"رمادي شمسي مرصع بالكريستال",condition:"New",year:"2026",desc:"The ultimate symbol of achievement. This Rolex features a day and date complication with exquisite crystal hour markers.",descAr:"رمز الإنجاز المطلق. تتميز رولكس هذه بخاصية عرض اليوم والتاريخ مع مؤشرات ساعات كريستالية رائعة.",features:["Day-Date Complication","Crystal Indices","President Bracelet"],featAr:["خاصية اليوم والتاريخ","مؤشرات كريستالية","سوار بريزيدنت"],img:null,exclusive:false,hot:false},
-  {id:16,name:"Leather Datejust",nameAr:"ديتجاست جلد",brand:"Rolex",model:"",price:360,original:450,discount:20,category:"Classic",categoryAr:"كلاسيكي",badge:"exclusive",badgeAr:"حصري",dial:"Black Crystal-set",dialAr:"أسود مرصع بالكريستال",condition:"New",year:"2026",desc:"A refined twist on the classic Datejust, featuring a high-quality leather strap and crystal-set dial.",descAr:"لمسة راقية على ساعة ديتجاست الكلاسيكية، تتميز بسوار من الجلد عالي الجودة ومينا مرصع بالكريستال.",features:["Leather Strap","Crystal Accents","Date Window"],featAr:["سوار جلدي","لمسات كريستالية","نافذة للتاريخ"],img:null,exclusive:true,hot:true},
+}, 
+
+
+{id:6,name:"Integral Crystal",nameAr:"إنتجرال كريستال",brand:"Rado",model:"",price:600,original:670,discount:10,category:"Classic",categoryAr:"كلاسيكي",badge:"new",badgeAr:"جديد",dial:"Grey Crystal-set",dialAr:"رمادي مرصع بالكريستال",condition:"New",year:"2024",desc:"Sophisticated and refined, this Rado features a monochromatic grey palette enhanced by luxurious crystal indices.",descAr:"متطورة وراقية، تتميز ساعة رادو هذه بلوحة ألوان رمادية أحادية معززة بمؤشرات كريستالية فاخرة.",features:["Crystal Accents","Monochrome Design","Ceramic Construction"],featAr:["لمسات كريستالية","تصميم أحادي اللون","هيكل سيراميكي"],img:null,exclusive:false,hot:false},
+
+
+
+{id:7,name:"Royal Oak Quartz",nameAr:"رويال أوك كوارتز",brand:"Audemars Piguet",model:"",price:300,original:400,discount:25,category:"Unique to own",categoryAr:"مميز للاقتناء",badge:"hot",badgeAr:"مطلوب",dial:"Blue Tapisserie",dialAr:"أزرق بنقش تبيسري",condition:"New",year:"2024",desc:"Featuring the signature octagonal bezel and tapisserie dial, this Royal Oak is a horological masterpiece.",descAr:"تتميز بإطارها الثماني الشهير ومينائها بنقش التبيسري، تُعد رويال أوك تحفة فنية.",features:["Octagonal Bezel","Tapisserie Dial","Integrated Bracelet"],featAr:["إطار ثماني","مينا بنقش تبيسري","سوار مدمج"],img:null,exclusive:true,hot:false},
+
+
+
+{id:8,name:"Land-Dweller Fluted",nameAr:"لاند-دويلر بإطار مخدد",brand:"Rolex",model:"",price:420,original:490,discount:14,category:"Practical",categoryAr:"عملي",badge:"bestseller",badgeAr:"الأكثر مبيعاً",dial:"Honey-comb Grey",dialAr:"رمادي بنقش خلية نحل",condition:"New",year:"2024",desc:"A robust adventurer's companion, the Land-Dweller combines a distinctive fluted bezel with a unique textured dial.",descAr:"رفيق المغامر القوي، تجمع ساعة لاند-دويلر بين الإطار المخدد المميز والمينا ذو الملمس الفريد.",features:["Fluted Bezel","Textured Dial","Oystersteel Build"],featAr:["إطار مخدد","مينا مزخرف","هيكل من أويسترستيل"],img:null,exclusive:false,hot:false},
+
+
+
+{id:9,name:"Tank Louis",nameAr:"تانك لويس",brand:"Cartier",model:"",price:399,original:600,discount:34,category:"Classic",categoryAr:"كلاسيكي",badge:"exclusive",badgeAr:"حصري",dial:"Silver Roman",dialAr:"فضي بأرقام رومانية",condition:"New",year:"2024",desc:"The embodiment of timeless Parisian chic. With its rectangular silhouette and classic Roman numeral dial.",descAr:"تجسيد للأناقة الباريسية الخالدة. بفضل تصميمها المستطيل ومينائها الكلاسيكي ذي الأرقام الرومانية.",features:["Rectangular Case","Roman Numerals","Leather Strap"],featAr:["هيكل مستطيل","أرقام رومانية","سوار جلدي"],img:null,exclusive:false,hot:true},
+
+
+
+{id:10,name:"Nautilus Silver",nameAr:"نوتيلوس فضي",brand:"Patek Philippe",model:"",price:320,original:600,discount:47,category:"Unique to own",categoryAr:"مميز للاقتناء",badge:"hot",badgeAr:"مطلوب",dial:"Silver Ribbed",dialAr:"فضي مخطط",condition:"New",year:"2024",desc:"This silver-dialed Nautilus offers a brighter, modern take on the legendary design.",descAr:"تقدم ساعة نوتيلوس ذات المينا الفضي نظرة عصرية وأكثر إشراقاً على التصميم الأسطوري.",features:["Silver Dial","Automatic Caliber","Porthole Design"],featAr:["مينا فضي","عيار أوتوماتيكي","تصميم كوة السفن"],img:null,exclusive:true,hot:false},
+
+
+
+{id:11,name:"Minimalist Square",nameAr:"مربع مينيماليست",brand:"Casio",model:"",price:540,original:600,discount:10,category:"Simple",categoryAr:"بسيط",badge:"new",badgeAr:"جديد",dial:"Silver Sunray",dialAr:"فضي شمسي",condition:"New",year:"2026",desc:"A perfect blend of understated elegance and daily utility. This silver-toned square watch offers a clean, professional look.",descAr:"مزيج مثالي بين الأناقة البسيطة والعملية اليومية. توفر هذه الساعة المربعة ذات اللون الفضي مظهراً احترافياً نظيفاً.",features:["Square Profile","Silver Finish","Reliable Quartz"],featAr:["هيكل مربع","طلاء فضي","كوارتز موثوق"],img:null,exclusive:true,hot:false},
+
+
+
+{id:12,name:"Nautilus Brown",nameAr:"نوتيلوس بني",brand:"Patek Philippe",model:"",price:549,original:640,discount:14,category:"Unique to own",categoryAr:"مميز للاقتناء",badge:"hot",badgeAr:"مطلوب",dial:"Chocolate Ribbed",dialAr:"شوكولاتة مخطط",condition:"New",year:"2026",desc:"An extraordinary Nautilus variant featuring a rich chocolate-toned dial.",descAr:"نسخة استثنائية من نوتيلوس تتميز بميناء غني بلون الشوكولاتة.",features:["Chocolate Dial","Integrated Bracelet","Exhibition Caseback"],featAr:["مينا شوكولاتة","سوار مدمج","غطاء خلفي شفاف"],img:null,exclusive:false,hot:false},
+
+
+
+{id:13,name:"Black Stealth",nameAr:"بلاك ستيلث",brand:"Custom Design",model:"",price:399,original:550,discount:27,category:"Unique to own",categoryAr:"مميز للاقتناء",badge:"exclusive",badgeAr:"حصري",dial:"Arabic Numeral Matte",dialAr:"أرقام عربية مطفية",condition:"New",year:"2026",desc:"A bold, all-black statement piece featuring traditional Arabic numerals on a matte finish.",descAr:"قطعة جريئة باللون الأسود بالكامل تتميز بأرقام عربية تقليدية على سطح مطفي.",features:["Full Black Finish","Arabic Numerals","Artistic Dial"],featAr:["تشطيب أسود كامل","أرقام عربية","مينا فني"],img:null,exclusive:false,hot:false},
+
+
+
+{id:14,name:"Everyday Square",nameAr:"إيفري داي سكوير",brand:"Casio",model:"",price:450,original:600,discount:25,category:"Practical",categoryAr:"عملي",badge:"deal",badgeAr:"عرض",dial:"Dark Grey",dialAr:"رمادي داكن",condition:"New",year:"2026",desc:"Built for the practical individual, this square watch offers a sophisticated dark grey dial.",descAr:"صُممت للفرد العملي، تقدم هذه الساعة المربعة ميناءً رمادياً داكناً متطوراً.",features:["Square Case","Date Function","Casual Style"],featAr:["هيكل مربع","وظيفة التاريخ","تصميم كاجوال"],img:null,exclusive:true,hot:false},
+
+
+
+{id:15,name:"Oyster Perpetual Day-Date",nameAr:"أويستر بربتشوال داي-ديت",brand:"Rolex",model:"",price:500,original:600,discount:17,category:"Classic",categoryAr:"كلاسيكي",badge:"bestseller",badgeAr:"الأكثر مبيعاً",dial:"Sunray Grey Crystal-set",dialAr:"رمادي شمسي مرصع بالكريستال",condition:"New",year:"2026",desc:"The ultimate symbol of achievement. This Rolex features a day and date complication with exquisite crystal hour markers.",descAr:"رمز الإنجاز المطلق. تتميز رولكس هذه بخاصية عرض اليوم والتاريخ مع مؤشرات ساعات كريستالية رائعة.",features:["Day-Date Complication","Crystal Indices","President Bracelet"],featAr:["خاصية اليوم والتاريخ","مؤشرات كريستالية","سوار بريزيدنت"],img:null,exclusive:false,hot:false},
+
+
+
+{id:16,name:"Leather Datejust",nameAr:"ديتجاست جلد",brand:"Rolex",model:"",price:360,original:450,discount:20,category:"Classic",categoryAr:"كلاسيكي",badge:"exclusive",badgeAr:"حصري",dial:"Black Crystal-set",dialAr:"أسود مرصع بالكريستال",condition:"New",year:"2026",desc:"A refined twist on the classic Datejust, featuring a high-quality leather strap and crystal-set dial.",descAr:"لمسة راقية على ساعة ديتجاست الكلاسيكية، تتميز بسوار من الجلد عالي الجودة ومينا مرصع بالكريستال.",features:["Leather Strap","Crystal Accents","Date Window"],featAr:["سوار جلدي","لمسات كريستالية","نافذة للتاريخ"],img:null,exclusive:true,hot:true},
 ]
 
 WATCHES.forEach((w,i)=>{ w.img = WATCH_IMGS[i] || null })
