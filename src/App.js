@@ -137,7 +137,7 @@ function useLang(){
   return{lang,ar,toggle}
 }
 
-function useInView(threshold=0.12){
+function useInView(threshold=0.05){
   const ref=useRef(null)
   const [vis,setVis]=useState(false)
   useEffect(()=>{
@@ -177,7 +177,7 @@ function LiveClock({size=380}){
     </g>
   )
   return(
-    <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`} style={{filter:'drop-shadow(0 0 40px rgba(212,170,80,0.2)) drop-shadow(0 30px 60px rgba(0,0,0,0.7))',maxWidth:'100%'}}>
+<svg width={size} height={size} viewBox={`0 0 ${size} ${size}`} style={{filter:'drop-shadow(0 0 40px rgba(212,170,80,0.2)) drop-shadow(0 30px 60px rgba(0,0,0,0.7))', maxWidth:'100%', overflow:'visible'}}>
       <defs>
         <radialGradient id="dialBg" cx="45%" cy="38%"><stop offset="0%" stopColor="#221e14"/><stop offset="100%" stopColor="#080705"/></radialGradient>
         <radialGradient id="caseBg" cx="50%" cy="50%"><stop offset="0%" stopColor="#2e2818"/><stop offset="100%" stopColor="#100e08"/></radialGradient>
@@ -346,7 +346,7 @@ function Hero({ar}){
   const [vis,setVis]=useState(false)
   useEffect(()=>{const t=setTimeout(()=>setVis(true),120);return()=>clearTimeout(t)},[])
   return(
-    <section id="top" style={{minHeight:'100vh',background:`radial-gradient(ellipse at 70% 50%,rgba(212,170,80,.07) 0%,transparent 60%),radial-gradient(ellipse at 30% 80%,rgba(212,170,80,.04) 0%,transparent 50%),${C.bg}`,padding:'80px clamp(16px,5vw,60px) 40px',overflow:'hidden',direction:ar?'rtl':'ltr',position:'relative'}}>
+    <section id="top" style={{minHeight:'100vh',background:`radial-gradient(ellipse at 70% 50%,rgba(212,170,80,.07) 0%,transparent 60%),radial-gradient(ellipse at 30% 80%,rgba(212,170,80,.04) 0%,transparent 50%),${C.bg}`,padding:'80px clamp(16px,5vw,60px) 40px',direction:ar?'rtl':'ltr',position:'relative'}}>
       <div style={{position:'absolute',inset:0,backgroundImage:`linear-gradient(${C.gold}08 1px,transparent 1px),linear-gradient(90deg,${C.gold}08 1px,transparent 1px)`,backgroundSize:'50px 50px',pointerEvents:'none'}}/>
       <div style={{display:'grid',gridTemplateColumns:'repeat(auto-fit,minmax(min(320px,100%),1fr))',alignItems:'center',gap:'40px',maxWidth:'1300px',margin:'0 auto',minHeight:'calc(100vh - 120px)'}}>
         {/* Text */}
@@ -381,7 +381,7 @@ function Hero({ar}){
         {/* Clock */}
         <div style={{display:'flex',justifyContent:'center',alignItems:'center',position:'relative',opacity:vis?1:0,transform:vis?'none':'scale(.88)',transition:'opacity 1.2s ease .3s,transform 1.2s ease .3s'}}>
           <div style={{position:'absolute',width:'min(500px,90vw)',height:'min(500px,90vw)',background:`radial-gradient(circle,${C.gold}0d 0%,transparent 70%)`,borderRadius:'50%',pointerEvents:'none'}}/>
-          <LiveClock size={Math.min(420, typeof window!=='undefined'?window.innerWidth*.85:420)}/>
+<LiveClock size={Math.min(360, typeof window!=='undefined'?window.innerWidth*.78:360)}/>
         </div>
       </div>
     </section>
