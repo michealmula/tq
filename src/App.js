@@ -139,7 +139,7 @@ function useLang(){
 
 function useInView(threshold=0.05){
   const ref=useRef(null)
-  const [vis,setVis]=useState(false)
+  const [vis,setVis]=useState(true)
   useEffect(()=>{
     const obs=new IntersectionObserver(([e])=>{if(e.isIntersecting)setVis(true)},{threshold})
     if(ref.current)obs.observe(ref.current)
@@ -177,8 +177,8 @@ function LiveClock({size=380}){
     </g>
   )
   return(
-<svg width={size} height={size} viewBox={`0 0 ${size} ${size}`} style={{filter:'drop-shadow(0 0 40px rgba(212,170,80,0.2)) drop-shadow(0 30px 60px rgba(0,0,0,0.7))', maxWidth:'100%', overflow:'visible'}}>
-      <defs>
+<svg width={size} height={size} viewBox={`-34 -34 ${size+68} ${size+68}`} style={{filter:'drop-shadow(0 0 40px rgba(212,170,80,0.2)) drop-shadow(0 30px 60px rgba(0,0,0,0.7))', maxWidth:'100%', overflow:'visible'}}>
+        <defs>
         <radialGradient id="dialBg" cx="45%" cy="38%"><stop offset="0%" stopColor="#221e14"/><stop offset="100%" stopColor="#080705"/></radialGradient>
         <radialGradient id="caseBg" cx="50%" cy="50%"><stop offset="0%" stopColor="#2e2818"/><stop offset="100%" stopColor="#100e08"/></radialGradient>
       </defs>
